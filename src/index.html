@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./assets/application.css" rel="stylesheet" />
+
+    <!-- On real projects the fonts should be self-hosted -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,900&display=swap"
+      rel="stylesheet" />
+    <script type="text/javascript" src="./assets/scripts.js" defer></script>
+    <title>Platter Technical Challenge</title>
+  </head>
+  <body>
+    <!-- Gallery Section -->
+    <section class="py-9 px-6 lg:px-0 lg:pt-20 lg:pb-[100px] max-w-[100vw] overflow-hidden">
+      <div class="flex w-full justify-center lg:justify-between lg:px-32">
+        <h2 class="font-serif text-[28px] lg:text-[40px] leading-[48px]">Best Sellers</h2>
+        <a href="#shop-all" class="hidden lg:flex items-center text-sm font-semibold px-8 py-4 text-green-brand">
+          Shop All Best Sellers
+          <i aria-hidden="true" class="icon-link-arrow ml-3"></i>
+        </a>
+      </div>
+
+      <!-- Grid Wrapper -->
+      <div
+        class="grid-wrapper js-draggable grid grid-cols-2 lg:flex lg:flex-nowrap gap-[11px] lg:gap-6 pt-6 lg:pt-9 lg:px-32 lg:pb-12 overflow-auto gallery-custom-horizontal-scrollbar has-hidden-products">
+        <!-- Grid Item -->
+        <a href="#product-anchor" draggable="false" class="product-wrapper flex flex-col flex-shrink-0 pb-2 lg:pb-4 select-none">
+          <div class="relative group">
+            <span class="badge-base">Best Seller</span>
+            <img
+              draggable="false"
+              class="rounded-[10px]"
+              src="https://images.unsplash.com/photo-1590486803903-35122bc681e9?q=80&w=355&h=355&auto=format&fit=crop&crop=focalpoint&fp-y=.60&fp-z=3&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D%22"
+              alt="" />
+            <img
+              draggable="false"
+              class="hover-image"
+              src="https://images.unsplash.com/photo-1590486803807-a91daca5eb66?q=80&w=355&h=355&auto=format&fit=crop&crop=entropy&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D%22"
+              alt="" />
+          </div>
+          <h3 class="font-bebas text-base lg:text-[19px] leading-5 lg:leading-[22px] pt-3 px-2 lg:pt-4 lg:px-3">Outside Vibes T-Shirt Sunshine</h3>
+          <div class="flex items-center leading-[17px] text-[11px] lg:text-xs text-gray-brand pt-2 px-2 lg:px-3 relative overflow-hidden">
+            <span class="flex gap-[2px] mr-1" aria-hidden="true">
+              <i class="icon-star-full lg:w-3"></i>
+              <i class="icon-star-full lg:w-3"></i>
+              <i class="icon-star-full lg:w-3"></i>
+              <i class="icon-star-full lg:w-3"></i>
+              <i class="icon-star-half lg:w-3"></i>
+            </span>
+            <span class="sr-only">4.5 stars</span>
+            1,234 Reviews
+          </div>
+          <b class="font-medium pt-2 px-2 lg:px-3">$104.95</b>
+        </a>
+
+        <!-- Grid Item -->
+        <a href="#product-anchor" draggable="false" class="product-wrapper flex flex-col flex-shrink-0 pb-2 lg:pb-4 select-none">
+          <div class="relative group">
+            <span class="badge-base">Best Seller</span>
+            <span class="badge-base badge-green left-auto right-1 lg:right-2">Save 15%</span>
+            <img
+              draggable="false"
+              class="rounded-[10px]"
+              src="https://images.unsplash.com/photo-1633354557397-33ee5af54117?q=80&w=355&h=355&auto=format&fit=crop&crop=entropy&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D%22"
+              alt="" />
+            <img
+              draggable="false"
+              class="hover-image"
+              src="https://images.unsplash.com/photo-1625708458528-802ec79b1ed8?q=80&w=355&h=355&auto=format&fit=crop&crop=entropy&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D%22"
+              alt="" />
+          </div>
+          <h3 class="font-bebas text-base lg:text-[19px] leading-5 lg:leading-[22px] pt-3 px-2 lg:pt-4 lg:px-3">
+            Hike Bottle Outside Vibes Forest Green
+          </h3>
+          <div class="flex items-center leading-[17px] text-[11px] lg:text-xs text-gray-brand pt-2 px-2 lg:px-3 relative overflow-hidden">
+            <span class="flex gap-[2px] mr-1" aria-hidden="true">
+              <i class="icon-star-full lg:w-3"></i>
+              <i class="icon-star-full lg:w-3"></i>
+              <i class="icon-star-full lg:w-3"></i>
+              <i class="icon-star-full lg:w-3"></i>
+              <i class="icon-star-full lg:w-3"></i>
+            </span>
+            <span class="sr-only">4.5 stars</span>
+            1,234 Reviews
+          </div>
+          <b class="font-medium pt-2 px-2 lg:px-3">$104.95</b>
+        </a>
+
+        <!-- Grid Item -->
+        <a href="#product-anchor" draggable="false" class="product-wrapper flex flex-col flex-shrink-0 pb-2 lg:pb-4 select-none">
+          <div class="relative group">
+            <span class="badge-base">Best Seller</span>
+            <img
+              draggable="false"
+              class="rounded-[10px]"
+              src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?q=80&w=355&h=355&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="" />
+            <img
+              draggable="false"
+              class="hover-image"
+              src="https://images.unsplash.com/photo-1583744946564-b52ac1c389c8?q=80&w=355&h=355&auto=format&fit=crop&crop=entropy&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="" />
+          </div>
+          <h3 class="font-bebas text-base lg:text-[19px] leading-5 lg:leading-[22px] pt-3 px-2 lg:pt-4 lg:px-3">Rest in Nature T-Shirt Charcoal</h3>
+          <div class="flex items-center leading-[17px] text-[11px] lg:text-xs text-gray-brand pt-2 px-2 lg:px-3 relative overflow-hidden">
+            <span class="flex gap-[2px] mr-1" aria-hidden="true">
+              <i class="icon-star-full lg:w-3"></i>
+              <i class="icon-star-full lg:w-3"></i>
+              <i class="icon-star-full lg:w-3"></i>
+              <i class="icon-star-full lg:w-3"></i>
+              <i class="icon-star-full lg:w-3"></i>
+            </span>
+            <span class="sr-only">4.5 stars</span>
+            1,234 Reviews
+          </div>
+          <b class="font-medium pt-2 px-2 lg:px-3">$104.95</b>
+        </a>
+
+        <!-- Grid Item -->
+        <a href="#product-anchor" draggable="false" class="product-wrapper flex flex-col flex-shrink-0 pb-2 lg:pb-4 select-none">
+          <div class="relative group">
+            <span class="badge-base">Best Seller</span>
+            <span class="badge-base badge-green left-auto right-1 lg:right-2">Save 15%</span>
+            <img
+              draggable="false"
+              class="rounded-[10px]"
+              src="https://images.unsplash.com/photo-1620327467532-6ebaca6273ed?q=80&w=355&h=355&auto=format&fit=crop&crop=entropy&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D%22"
+              alt="" />
+            <img
+              draggable="false"
+              class="hover-image"
+              src="https://images.unsplash.com/photo-1620327489477-ff3c8420eab1?q=80&w=355&h=355&auto=format&fit=crop&crop=focalpoint&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D%22"
+              alt="" />
+          </div>
+          <h3 class="font-bebas text-base lg:text-[19px] leading-5 lg:leading-[22px] pt-3 px-2 lg:pt-4 lg:px-3">Outside Vibes Cap Forest Green</h3>
+          <div class="flex items-center leading-[17px] text-[11px] lg:text-xs text-gray-brand pt-2 px-2 lg:px-3 relative overflow-hidden">
+            <span class="flex gap-[2px] mr-1" aria-hidden="true">
+              <i class="icon-star-full lg:w-3"></i>
+              <i class="icon-star-full lg:w-3"></i>
+              <i class="icon-star-full lg:w-3"></i>
+              <i class="icon-star-full lg:w-3"></i>
+              <i class="icon-star-full lg:w-3"></i>
+            </span>
+            <span class="sr-only">4.5 stars</span>
+            1,234 Reviews
+          </div>
+          <b class="font-medium pt-2 px-2 lg:px-3">$104.95</b>
+        </a>
+
+        <!-- Grid Item -->
+        <a href="#product-anchor" draggable="false" class="product-wrapper flex flex-col flex-shrink-0 pb-2 lg:pb-4 select-none">
+          <div class="relative group">
+            <span class="badge-base">Best Seller</span>
+            <span class="badge-base badge-green left-auto right-1 lg:right-2">Save 15%</span>
+            <img
+              draggable="false"
+              class="rounded-[10px]"
+              src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=355&h=355&auto=format&fit=crop&crop=focalpoint&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D%22"
+              alt="" />
+            <img
+              draggable="false"
+              class="hover-image"
+              src="https://images.unsplash.com/photo-1548801133-da353ebb1d97?q=80&w=355&h=355&auto=format&fit=crop&crop=focalpoint&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D%22"
+              alt="" />
+          </div>
+          <h3 class="font-bebas text-base lg:text-[19px] leading-5 lg:leading-[22px] pt-3 px-2 lg:pt-4 lg:px-3">Running Shoe</h3>
+          <div class="flex items-center leading-[17px] text-[11px] lg:text-xs text-gray-brand pt-2 px-2 lg:px-3 relative overflow-hidden">
+            <span class="flex gap-[2px] mr-1" aria-hidden="true">
+              <i class="icon-star-full lg:w-3"></i>
+              <i class="icon-star-full lg:w-3"></i>
+              <i class="icon-star-full lg:w-3"></i>
+              <i class="icon-star-full lg:w-3"></i>
+              <i class="icon-star-full lg:w-3"></i>
+            </span>
+            <span class="sr-only">4.5 stars</span>
+            1,234 Reviews
+          </div>
+          <b class="font-medium pt-2 px-2 lg:px-3">$104.95</b>
+        </a>
+
+        <!-- Grid Item -->
+        <a href="#product-anchor" draggable="false" class="product-wrapper flex flex-col flex-shrink-0 pb-2 lg:pb-4 select-none">
+          <div class="relative group">
+            <span class="badge-base">Best Seller</span>
+            <span class="badge-base badge-green left-auto right-1 lg:right-2">Save 15%</span>
+            <img
+              draggable="false"
+              class="rounded-[10px]"
+              src="https://images.unsplash.com/photo-1633354557397-33ee5af54117?q=80&w=355&h=355&auto=format&fit=crop&crop=entropy&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D%22"
+              alt="" />
+            <img
+              draggable="false"
+              class="hover-image"
+              src="https://images.unsplash.com/photo-1625708458528-802ec79b1ed8?q=80&w=355&h=355&auto=format&fit=crop&crop=entropy&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D%22"
+              alt="" />
+          </div>
+          <h3 class="font-bebas text-base lg:text-[19px] leading-5 lg:leading-[22px] pt-3 px-2 lg:pt-4 lg:px-3">
+            Hike Bottle Outside Vibes Forest Green
+          </h3>
+          <div class="flex items-center leading-[17px] text-[11px] lg:text-xs text-gray-brand pt-2 px-2 lg:px-3 relative overflow-hidden">
+            <span class="flex gap-[2px] mr-1" aria-hidden="true">
+              <i class="icon-star-full lg:w-3"></i>
+              <i class="icon-star-full lg:w-3"></i>
+              <i class="icon-star-full lg:w-3"></i>
+              <i class="icon-star-full lg:w-3"></i>
+              <i class="icon-star-full lg:w-3"></i>
+            </span>
+            <span class="sr-only">4.5 stars</span>
+            1,234 Reviews
+          </div>
+          <b class="font-medium pt-2 px-2 lg:px-3">$104.95</b>
+        </a>
+
+        <!-- Grid Item -->
+        <a href="#product-anchor" draggable="false" class="product-wrapper flex flex-col flex-shrink-0 pb-2 lg:pb-4 select-none">
+          <div class="relative group">
+            <span class="badge-base">Best Seller</span>
+            <img
+              draggable="false"
+              class="rounded-[10px]"
+              src="https://images.unsplash.com/photo-1590486803903-35122bc681e9?q=80&w=355&h=355&auto=format&fit=crop&crop=focalpoint&fp-y=.60&fp-z=3&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D%22"
+              alt="" />
+            <img
+              draggable="false"
+              class="hover-image"
+              src="https://images.unsplash.com/photo-1590486803807-a91daca5eb66?q=80&w=355&h=355&auto=format&fit=crop&crop=entropy&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D%22"
+              alt="" />
+          </div>
+          <h3 class="font-bebas text-base lg:text-[19px] leading-5 lg:leading-[22px] pt-3 px-2 lg:pt-4 lg:px-3">Outside Vibes T-Shirt Sunshine</h3>
+          <div class="flex items-center leading-[17px] text-[11px] lg:text-xs text-gray-brand pt-2 px-2 lg:px-3 relative overflow-hidden">
+            <span class="flex gap-[2px] mr-1" aria-hidden="true">
+              <i class="icon-star-full lg:w-3"></i>
+              <i class="icon-star-full lg:w-3"></i>
+              <i class="icon-star-full lg:w-3"></i>
+              <i class="icon-star-full lg:w-3"></i>
+              <i class="icon-star-half lg:w-3"></i>
+            </span>
+            <span class="sr-only">4.5 stars</span>
+            1,234 Reviews
+          </div>
+          <b class="font-medium pt-2 px-2 lg:px-3">$104.95</b>
+        </a>
+
+        <!-- Grid Item -->
+        <a href="#product-anchor" draggable="false" class="product-wrapper flex flex-col flex-shrink-0 pb-2 lg:pb-4 select-none">
+          <div class="relative group">
+            <span class="badge-base">Best Seller</span>
+            <img
+              draggable="false"
+              class="rounded-[10px]"
+              src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?q=80&w=355&h=355&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="" />
+            <img
+              draggable="false"
+              class="hover-image"
+              src="https://images.unsplash.com/photo-1583744946564-b52ac1c389c8?q=80&w=355&h=355&auto=format&fit=crop&crop=entropy&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="" />
+          </div>
+          <h3 class="font-bebas text-base lg:text-[19px] leading-5 lg:leading-[22px] pt-3 px-2 lg:pt-4 lg:px-3">Rest in Nature T-Shirt Charcoal</h3>
+          <div class="flex items-center leading-[17px] text-[11px] lg:text-xs text-gray-brand pt-2 px-2 lg:px-3 relative overflow-hidden">
+            <span class="flex gap-[2px] mr-1" aria-hidden="true">
+              <i class="icon-star-full lg:w-3"></i>
+              <i class="icon-star-full lg:w-3"></i>
+              <i class="icon-star-full lg:w-3"></i>
+              <i class="icon-star-full lg:w-3"></i>
+              <i class="icon-star-full lg:w-3"></i>
+            </span>
+            <span class="sr-only">4.5 stars</span>
+            1,234 Reviews
+          </div>
+          <b class="font-medium pt-2 px-2 lg:px-3">$104.95</b>
+        </a>
+
+        <!-- Grid Item -->
+        <a href="#product-anchor" draggable="false" class="product-wrapper flex flex-col flex-shrink-0 pb-2 lg:pb-4 select-none">
+          <div class="relative group">
+            <span class="badge-base">Best Seller</span>
+            <span class="badge-base badge-green left-auto right-1 lg:right-2">Save 15%</span>
+            <img
+              draggable="false"
+              class="rounded-[10px]"
+              src="https://images.unsplash.com/photo-1620327467532-6ebaca6273ed?q=80&w=355&h=355&auto=format&fit=crop&crop=entropy&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D%22"
+              alt="" />
+            <img
+              draggable="false"
+              class="hover-image"
+              src="https://images.unsplash.com/photo-1620327489477-ff3c8420eab1?q=80&w=355&h=355&auto=format&fit=crop&crop=focalpoint&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D%22"
+              alt="" />
+          </div>
+          <h3 class="font-bebas text-base lg:text-[19px] leading-5 lg:leading-[22px] pt-3 px-2 lg:pt-4 lg:px-3">Outside Vibes Cap Forest Green</h3>
+          <div class="flex items-center leading-[17px] text-[11px] lg:text-xs text-gray-brand pt-2 px-2 lg:px-3 relative overflow-hidden">
+            <span class="flex gap-[2px] mr-1" aria-hidden="true">
+              <i class="icon-star-full lg:w-3"></i>
+              <i class="icon-star-full lg:w-3"></i>
+              <i class="icon-star-full lg:w-3"></i>
+              <i class="icon-star-full lg:w-3"></i>
+              <i class="icon-star-full lg:w-3"></i>
+            </span>
+            <span class="sr-only">4.5 stars</span>
+            1,234 Reviews
+          </div>
+          <b class="font-medium pt-2 px-2 lg:px-3">$104.95</b>
+        </a>
+        <!-- Grid Item -->
+        <a href="#product-anchor" draggable="false" class="product-wrapper flex flex-col flex-shrink-0 pb-2 lg:pb-4 select-none">
+          <div class="relative group">
+            <span class="badge-base">Best Seller</span>
+            <span class="badge-base badge-green left-auto right-1 lg:right-2">Save 15%</span>
+            <img
+              draggable="false"
+              class="rounded-[10px]"
+              src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=355&h=355&auto=format&fit=crop&crop=focalpoint&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D%22"
+              alt="" />
+            <img
+              draggable="false"
+              class="hover-image"
+              src="https://images.unsplash.com/photo-1548801133-da353ebb1d97?q=80&w=355&h=355&auto=format&fit=crop&crop=focalpoint&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D%22"
+              alt="" />
+          </div>
+          <h3 class="font-bebas text-base lg:text-[19px] leading-5 lg:leading-[22px] pt-3 px-2 lg:pt-4 lg:px-3">Running Shoe</h3>
+          <div class="flex items-center leading-[17px] text-[11px] lg:text-xs text-gray-brand pt-2 px-2 lg:px-3 relative overflow-hidden">
+            <span class="flex gap-[2px] mr-1" aria-hidden="true">
+              <i class="icon-star-full lg:w-3"></i>
+              <i class="icon-star-full lg:w-3"></i>
+              <i class="icon-star-full lg:w-3"></i>
+              <i class="icon-star-full lg:w-3"></i>
+              <i class="icon-star-full lg:w-3"></i>
+            </span>
+            <span class="sr-only">4.5 stars</span>
+            1,234 Reviews
+          </div>
+          <b class="font-medium pt-2 px-2 lg:px-3">$104.95</b>
+        </a>
+      </div>
+
+      <!-- Show More Button -->
+      <button type="button" class="js-show-more btn-primary lg:hidden">Show More</button>
+    </section>
+  </body>
+</html>
